@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ParkListCell" rowHeight="291" id="KGk-i7-Jjw" customClass="ParkListCell" customModule="ParkBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="291"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="290.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPark" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-TR-suR">
+                        <rect key="frame" x="0.0" y="42.5" width="375" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="W5x-4e-Rp7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zez-fU-YLK">
+                        <rect key="frame" x="8" y="252.5" width="359" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dmj-Jn-xor">
+                        <rect key="frame" x="8" y="8" width="359" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" text="ParkName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JX8-cO-joU">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-gP-GYT">
+                                <rect key="frame" x="79" y="0.0" width="280" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zez-fU-YLK" secondAttribute="bottom" constant="8" id="0sI-GW-BIk"/>
+                    <constraint firstItem="zez-fU-YLK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="745-cR-Eht"/>
+                    <constraint firstItem="dmj-Jn-xor" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="8G4-BT-h15"/>
+                    <constraint firstAttribute="trailing" secondItem="dmj-Jn-xor" secondAttribute="trailing" constant="8" id="9hl-2w-m06"/>
+                    <constraint firstItem="dmj-Jn-xor" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ATG-33-evd"/>
+                    <constraint firstItem="VfG-TR-suR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AWD-4d-D7Y"/>
+                    <constraint firstItem="VfG-TR-suR" firstAttribute="top" secondItem="dmj-Jn-xor" secondAttribute="bottom" constant="10" id="E6h-w3-cm3"/>
+                    <constraint firstAttribute="trailing" secondItem="VfG-TR-suR" secondAttribute="trailing" id="vQ2-TY-yXP"/>
+                    <constraint firstItem="zez-fU-YLK" firstAttribute="top" secondItem="VfG-TR-suR" secondAttribute="bottom" constant="10" id="va9-8O-Nfq"/>
+                    <constraint firstAttribute="trailing" secondItem="zez-fU-YLK" secondAttribute="trailing" constant="8" id="wCZ-Xa-xSB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="name" destination="SFf-gP-GYT" id="6sp-ew-qjo"/>
+                <outlet property="parkImage" destination="VfG-TR-suR" id="bEu-HS-pjP"/>
+                <outlet property="parkIntroduction" destination="zez-fU-YLK" id="ttf-wF-bBK"/>
+                <outlet property="parkName" destination="JX8-cO-joU" id="VTO-aJ-eBJ"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="36.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultPark" width="497" height="494"/>
+    </resources>
+</document>
