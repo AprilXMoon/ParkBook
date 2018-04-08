@@ -26,8 +26,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.title = "台北市公園景點"
-        
         settingTableView()
         downloadDataFromDataTaipei()
     }
