@@ -19,6 +19,7 @@ class OtherPlaceCell: UICollectionViewCell {
     }
 
     override func prepareForReuse() {
+        super.prepareForReuse()
         placeName.text = ""
         placeImage.image = UIImage(named:"defaultPark")
     }

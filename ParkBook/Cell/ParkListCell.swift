@@ -27,6 +27,7 @@ class ParkListCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         parkImage.image = UIImage(named: "defaultPark")
         parkName.text = ""
         name.text = ""
